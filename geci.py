@@ -11,7 +11,7 @@ d = st.date_input("When's your birthday", value=None)
 st.write('Your birthday is:', d
 )
 
-genre = st.radio(
+gender = st.radio(
     "What's your gender",
     ["Male", "Female"],
     index=None,
