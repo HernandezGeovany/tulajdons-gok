@@ -4,9 +4,11 @@ title = st.text_input('email', '')
 
 title = st.text_input('name', '')
 
+title = st.text_input('how old are you', '')
+
 genre = st.radio(
     "What's your gender",
-    ["mail", "Female"],
+    ["Male", "Female"],
     index=None,
 )
 
