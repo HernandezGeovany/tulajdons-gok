@@ -2,9 +2,9 @@
 import datetime
 import streamlit as st
 
-title = st.text_input('email', '')
+email = st.text_input('email', '')
 
-title = st.text_input('name', '')
+name = st.text_input('name', '')
 
 
 d = st.date_input("When's your birthday", value=None)
@@ -17,5 +17,10 @@ gender = st.radio(
     index=None,
 )
 
+f = open("demofile3.txt", "w")
+f.write("gender","d","email","name")
+f.close()
 
-
+#open and read the file after the overwriting:
+f = open("demofile3.txt", "r")
+print(f.read())
