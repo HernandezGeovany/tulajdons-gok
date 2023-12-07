@@ -17,10 +17,6 @@ gender = st.radio(
     index=None,
 )
 
-f = open("demofile3.txt", "w")
-f.write("gender","d","email","name")
-f.close()
-
-#open and read the file after the overwriting:
-f = open("demofile3.txt", "r")
-print(f.read())
+with open("my_file.txt", "a") as f:
+   f.write(email)
+print(f)
