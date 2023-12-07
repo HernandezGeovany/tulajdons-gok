@@ -18,5 +18,4 @@ gender = st.radio(
 )
 
 with open("my_file.txt", "a") as f:
-   f.write(email)
-print(f)
+   f.write(email,d,gender,name)
